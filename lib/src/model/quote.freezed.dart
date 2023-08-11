@@ -25,6 +25,7 @@ mixin _$Quote {
   Map<String, Preset> get presets => throw _privateConstructorUsedError;
   @JsonKey(name: 'recommended_preset')
   String get recommendedPreset => throw _privateConstructorUsedError;
+  int get gas => throw _privateConstructorUsedError;
   String get toTokenAmount => throw _privateConstructorUsedError;
   Cost get prices => throw _privateConstructorUsedError;
   Cost get volume => throw _privateConstructorUsedError;
@@ -47,6 +48,7 @@ abstract class $QuoteCopyWith<$Res> {
       String feeToken,
       Map<String, Preset> presets,
       @JsonKey(name: 'recommended_preset') String recommendedPreset,
+      int gas,
       String toTokenAmount,
       Cost prices,
       Cost volume,
@@ -75,6 +77,7 @@ class _$QuoteCopyWithImpl<$Res, $Val extends Quote>
     Object? feeToken = null,
     Object? presets = null,
     Object? recommendedPreset = null,
+    Object? gas = null,
     Object? toTokenAmount = null,
     Object? prices = null,
     Object? volume = null,
@@ -99,6 +102,10 @@ class _$QuoteCopyWithImpl<$Res, $Val extends Quote>
           ? _value.recommendedPreset
           : recommendedPreset // ignore: cast_nullable_to_non_nullable
               as String,
+      gas: null == gas
+          ? _value.gas
+          : gas // ignore: cast_nullable_to_non_nullable
+              as int,
       toTokenAmount: null == toTokenAmount
           ? _value.toTokenAmount
           : toTokenAmount // ignore: cast_nullable_to_non_nullable
@@ -154,6 +161,7 @@ abstract class _$$_QuoteCopyWith<$Res> implements $QuoteCopyWith<$Res> {
       String feeToken,
       Map<String, Preset> presets,
       @JsonKey(name: 'recommended_preset') String recommendedPreset,
+      int gas,
       String toTokenAmount,
       Cost prices,
       Cost volume,
@@ -180,6 +188,7 @@ class __$$_QuoteCopyWithImpl<$Res> extends _$QuoteCopyWithImpl<$Res, _$_Quote>
     Object? feeToken = null,
     Object? presets = null,
     Object? recommendedPreset = null,
+    Object? gas = null,
     Object? toTokenAmount = null,
     Object? prices = null,
     Object? volume = null,
@@ -204,6 +213,10 @@ class __$$_QuoteCopyWithImpl<$Res> extends _$QuoteCopyWithImpl<$Res, _$_Quote>
           ? _value.recommendedPreset
           : recommendedPreset // ignore: cast_nullable_to_non_nullable
               as String,
+      gas: null == gas
+          ? _value.gas
+          : gas // ignore: cast_nullable_to_non_nullable
+              as int,
       toTokenAmount: null == toTokenAmount
           ? _value.toTokenAmount
           : toTokenAmount // ignore: cast_nullable_to_non_nullable
@@ -240,6 +253,7 @@ class _$_Quote implements _Quote {
       required this.feeToken,
       required final Map<String, Preset> presets,
       @JsonKey(name: 'recommended_preset') required this.recommendedPreset,
+      required this.gas,
       required this.toTokenAmount,
       required this.prices,
       required this.volume,
@@ -268,6 +282,8 @@ class _$_Quote implements _Quote {
   @JsonKey(name: 'recommended_preset')
   final String recommendedPreset;
   @override
+  final int gas;
+  @override
   final String toTokenAmount;
   @override
   final Cost prices;
@@ -288,7 +304,7 @@ class _$_Quote implements _Quote {
 
   @override
   String toString() {
-    return 'Quote(fromTokenAmount: $fromTokenAmount, feeToken: $feeToken, presets: $presets, recommendedPreset: $recommendedPreset, toTokenAmount: $toTokenAmount, prices: $prices, volume: $volume, whitelist: $whitelist, settlementAddress: $settlementAddress, quoteId: $quoteId)';
+    return 'Quote(fromTokenAmount: $fromTokenAmount, feeToken: $feeToken, presets: $presets, recommendedPreset: $recommendedPreset, gas: $gas, toTokenAmount: $toTokenAmount, prices: $prices, volume: $volume, whitelist: $whitelist, settlementAddress: $settlementAddress, quoteId: $quoteId)';
   }
 
   @override
@@ -303,6 +319,7 @@ class _$_Quote implements _Quote {
             const DeepCollectionEquality().equals(other._presets, _presets) &&
             (identical(other.recommendedPreset, recommendedPreset) ||
                 other.recommendedPreset == recommendedPreset) &&
+            (identical(other.gas, gas) || other.gas == gas) &&
             (identical(other.toTokenAmount, toTokenAmount) ||
                 other.toTokenAmount == toTokenAmount) &&
             (identical(other.prices, prices) || other.prices == prices) &&
@@ -322,6 +339,7 @@ class _$_Quote implements _Quote {
       feeToken,
       const DeepCollectionEquality().hash(_presets),
       recommendedPreset,
+      gas,
       toTokenAmount,
       prices,
       volume,
@@ -350,6 +368,7 @@ abstract class _Quote implements Quote {
       required final Map<String, Preset> presets,
       @JsonKey(name: 'recommended_preset')
       required final String recommendedPreset,
+      required final int gas,
       required final String toTokenAmount,
       required final Cost prices,
       required final Cost volume,
@@ -368,6 +387,8 @@ abstract class _Quote implements Quote {
   @override
   @JsonKey(name: 'recommended_preset')
   String get recommendedPreset;
+  @override
+  int get gas;
   @override
   String get toTokenAmount;
   @override

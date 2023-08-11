@@ -20,6 +20,7 @@ class Quote with _$Quote {
       required String feeToken,
       required Map<String, Preset> presets,
       @JsonKey(name: 'recommended_preset') required String recommendedPreset,
+      required int gas,
       required String toTokenAmount,
       required Cost prices,
       required Cost volume,
