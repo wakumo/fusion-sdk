@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:fusion_sdk/src/utils/utils.dart';
 
+import '../utils/utils.dart';
 import 'auction_point.dart';
 import 'auction_salt.dart';
 

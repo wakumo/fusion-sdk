@@ -1,9 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:fusion_sdk/src/constant/constants.dart';
-import 'package:fusion_sdk/src/model/auction_whitelist_item.dart';
-import 'package:fusion_sdk/src/model/fusion_order.dart';
-import 'package:fusion_sdk/src/model/limit_order.dart';
 
+import '../constant/constants.dart';
+import '../model/auction_whitelist_item.dart';
+import '../model/fusion_order.dart';
+import '../model/limit_order.dart';
 import '../utils/utils.dart';
 import 'auction_suffix.dart';
 import 'cost.dart';

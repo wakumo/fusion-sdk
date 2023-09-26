@@ -1,5 +1,5 @@
 import 'package:eth_sig_util/eth_sig_util.dart';
-import 'package:fusion_sdk/fusion_sdk.dart';
+import 'package:fusion_swap_sdk/fusion_swap_sdk.dart';
 import 'package:http/http.dart';
 import 'package:web3dart/web3dart.dart';
 

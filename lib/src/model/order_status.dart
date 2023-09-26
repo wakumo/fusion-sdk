@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:fusion_sdk/src/model/order.dart';
-import 'package:fusion_sdk/src/model/order_fill.dart';
+
+import '../model/order.dart';
+import '../model/order_fill.dart';
 
 part 'order_status.freezed.dart';
 

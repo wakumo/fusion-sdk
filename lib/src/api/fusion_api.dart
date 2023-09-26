@@ -1,7 +1,6 @@
-import 'package:fusion_sdk/fusion_sdk.dart';
-import 'package:fusion_sdk/src/api/base_api.dart';
-import 'package:fusion_sdk/src/api/orders_api.dart';
-
+import './base_api.dart';
+import './orders_api.dart';
+import '../../fusion_swap_sdk.dart';
 import 'quoter_api.dart';
 import 'relayer_api.dart';
 

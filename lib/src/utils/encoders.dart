@@ -1,9 +1,9 @@
 import 'package:eth_sig_util/util/utils.dart';
-import 'package:fusion_sdk/src/utils/utils.dart';
 
 import '../constant/constants.dart';
 import '../model/auction_point.dart';
 import '../model/auction_whitelist_item.dart';
+import '../utils/utils.dart';
 
 String encodeAuctionParams(List<AuctionPoint> points) {
   return points

@@ -1,4 +1,4 @@
-library fusion_sdk;
+library fusion_swap_sdk;
 
 export 'src/api/request/quote_request.dart';
 export 'src/api/request/relayer_request.dart';

@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:fusion_sdk/src/api/request/relayer_request.dart';
-import 'package:fusion_sdk/src/model/prepared_order.dart';
-
+import './api/request/relayer_request.dart';
+import './model/prepared_order.dart';
 import 'api/fusion_api.dart';
 import 'api/request/quote_request.dart';
 import 'constant/constants.dart';

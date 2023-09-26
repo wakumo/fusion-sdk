@@ -1,4 +1,4 @@
-import 'package:fusion_sdk/src/model/fusion_order.dart';
+import '../model/fusion_order.dart';
 
 class PreparedOrder {
   final FusionOrder fusionOrder;

@@ -2,10 +2,10 @@ import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:eth_sig_util/model/typed_data.dart';
 import 'package:eth_sig_util/util/utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:fusion_sdk/src/model/auction_salt.dart';
-import 'package:fusion_sdk/src/model/auction_suffix.dart';
-import 'package:fusion_sdk/src/model/limit_order.dart';
 
+import '../model/auction_salt.dart';
+import '../model/auction_suffix.dart';
+import '../model/limit_order.dart';
 import '../utils/typed_data_utils.dart';
 
 part 'fusion_order.freezed.dart';

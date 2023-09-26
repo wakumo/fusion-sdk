@@ -1,4 +1,4 @@
-# fusion_sdk
+# fusion_swap_sdk
 
 Utils library for 1inch Fusion Mode.
 
@@ -10,7 +10,7 @@ Feel free to use and don't hesitate to raise issue if there are.
 
 Import and create instance
 ```dart
-import 'package:fusion_sdk/fusion_sdk.dart';
+import 'package:fusion_swap_sdk/fusion_swap_sdk.dart';
 
 final _fusionSDK = FusionSDK(chainId: chainId);
 ```
