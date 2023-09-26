@@ -1,10 +1,11 @@
 name: fusion_sdk
-description: A starting point for Dart libraries or applications.
-version: 0.0.1
-# repository: https://github.com/my_org/my_repo
+description: Utils library for 1inch Fusion Mode.
+version: 1.0.0
+homepage: https://wakumo.vn
+repository: https://github.com/wakumo/fusion-sdk
 
 environment:
-  sdk: '>=2.19.4 <3.0.0'
+  sdk: '>=2.19.4 <4.0.0'
 
 dependencies:
   dio: ^4.0.6
