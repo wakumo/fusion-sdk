@@ -13,7 +13,7 @@ void main() async {
   final tokenName = 'USD Coin (PoS)';
   final tokenAddress = '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174';
 
-  final fusionSDK = FusionSDK(chainId: chainId);
+  final fusionSDK = FusionSDK(chainId: chainId, authKey: '');
 
   // get quote info
   // final quote = await fusionSDK.getQuote(

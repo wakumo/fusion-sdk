@@ -1,6 +1,6 @@
 name: fusion_swap_sdk
 description: Utils library for 1inch Fusion Mode.
-version: 1.0.0
+version: 1.0.2
 homepage: https://wakumo.vn
 repository: https://github.com/wakumo/fusion-sdk
 

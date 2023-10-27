@@ -9,10 +9,10 @@ class FusionApi {
   late final RelayerApi relayerApi;
   late final OrdersApi ordersApi;
 
-  FusionApi({required int chainId}) {
-    quoterApi = QuoterApi(chainId: chainId);
-    relayerApi = RelayerApi(chainId: chainId);
-    ordersApi = OrdersApi(chainId: chainId);
+  FusionApi({required int chainId, required String authKey}) {
+    quoterApi = QuoterApi(chainId: chainId, authKey: authKey);
+    relayerApi = RelayerApi(chainId: chainId, authKey: authKey);
+    ordersApi = OrdersApi(chainId: chainId, authKey: authKey);
   }
 
   Future<Quote> getQuote(QuoteRequest request) {

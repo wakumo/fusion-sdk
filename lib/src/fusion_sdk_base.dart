@@ -14,8 +14,8 @@ class FusionSDK {
   late final FusionApi api;
   late final int chainId;
 
-  FusionSDK({required this.chainId}) {
-    api = FusionApi(chainId: chainId);
+  FusionSDK({required this.chainId, required String authKey}) {
+    api = FusionApi(chainId: chainId, authKey: authKey);
   }
 
   Future<Quote> getQuote(

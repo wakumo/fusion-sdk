@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:dio/dio.dart';
 
@@ -15,11 +16,16 @@ abstract class BaseApi {
     _dio = Dio();
 
     _dio.options.baseUrl =
-        'https://fusion.1inch.io/$service/v1.0/$networkChainId';
+        'https://api.1inch.dev/fusion/$service/v1.0/$networkChainId';
 
     _dio.options.sendTimeout = networkTimeout;
     _dio.options.connectTimeout = networkTimeout;
     _dio.options.receiveTimeout = networkTimeout;
+
+    _dio.options.headers = {
+      HttpHeaders.acceptHeader: ContentType.json,
+      HttpHeaders.authorizationHeader: 'Bearer $appAuthKey'
+    };
   }
 
   Future<Response> request(HttpMethod method, String path,
@@ -62,4 +68,6 @@ abstract class BaseApi {
   String get service;
 
   int get networkChainId;
+
+  String get appAuthKey;
 }
