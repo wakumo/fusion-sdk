@@ -6,7 +6,7 @@ import 'package:dio/dio.dart';
 enum HttpMethod { get, post, put, patch, delete }
 
 abstract class BaseApi {
-  static const networkTimeout = 30000;
+  static const networkTimeout = Duration(milliseconds: 30000);
 
   late final Dio _dio;
 
