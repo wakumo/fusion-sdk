@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:eth_sig_util/util/utils.dart';
-import 'package:web3dart/web3dart.dart';
+import 'package:web3dart_avacus/web3dart_avacus.dart';
 
 class PermitUtils {
   static const eip2612PermitModelFields = [

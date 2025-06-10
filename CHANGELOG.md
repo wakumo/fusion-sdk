@@ -9,3 +9,7 @@
 ## 1.0.3
 
 - Migrate dio to v5.
+
+## 1.0.4
+
+- Update to use stable web3dart_avacus

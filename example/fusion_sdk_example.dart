@@ -1,7 +1,7 @@
 import 'package:eth_sig_util/eth_sig_util.dart';
 import 'package:fusion_swap_sdk/fusion_swap_sdk.dart';
 import 'package:http/http.dart';
-import 'package:web3dart/web3dart.dart';
+import 'package:web3dart_avacus/web3dart_avacus.dart';
 
 void main() async {
   final rpcUrl = 'https://polygon-rpc.com';

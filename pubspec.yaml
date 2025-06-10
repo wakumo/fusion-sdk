@@ -1,6 +1,6 @@
 name: fusion_swap_sdk
 description: Utils library for 1inch Fusion Mode.
-version: 1.0.3
+version: 1.0.4
 homepage: https://wakumo.vn
 repository: https://github.com/wakumo/fusion-sdk
 
@@ -9,10 +9,10 @@ environment:
 
 dependencies:
   dio: ^5.3.3
-  eth_sig_util: 0.0.9
+  eth_sig_util: ^0.0.9
   freezed_annotation: ^2.2.0
   json_annotation: ^4.8.1
-  web3dart: 2.3.3
+  web3dart_avacus: ^2.4.0
 
 dev_dependencies:
   lints: ^2.0.0
